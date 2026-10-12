@@ -8,7 +8,7 @@
 /* Light interior palette: sage walls, warm wood and charcoal metal. */
 :root{color-scheme:light;--bg:#e8e9df;--surface:#f4f2e9;--text:#242923;--muted:#5f685a;--accent:#525f46;--line:#b9c0ae;--olive:#525f46}
 body{background:radial-gradient(ellipse at 70% 0%,#fff4df 0,transparent 55%),var(--bg)}
-.hero-brand{mix-blend-mode:multiply}.hero-brand img{filter:invert(1) grayscale(1) contrast(1.25)}
+.hero-brand{mix-blend-mode:multiply}.hero-brand img{filter:invert(1) grayscale(1) contrast(1.25) url(#logo-olive)}
 .eyebrow i{box-shadow:0 0 0 4px #525f4610}
 .booking{background:var(--olive);color:#faf7ed;border:1px solid #414d37;box-shadow:0 6px 24px #525f4615}
 .booking:hover{background:#414d37}.booking-caption{color:#e7e8dc}
