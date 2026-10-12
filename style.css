@@ -23,3 +23,12 @@ body{background:radial-gradient(ellipse at 70% 0%,#fff4df 0,transparent 55%),var
 .location p,.location-top .section-label{color:#5f685a}
 .route{border-color:#b9c0ae}
 a:focus-visible{outline-color:#525f46}
+
+/* Soft directional light and tactile controls. */
+.booking{background:linear-gradient(135deg,#647153 0%,#525f46 48%,#414d37 100%);border-color:#47543c;border-radius:8px;box-shadow:inset 0 1px 0 #ffffff35,inset 0 -1px 0 #26301d40,0 3px 0 #36422e,0 9px 20px #39452e20;transition:transform .18s,box-shadow .18s}
+.booking:hover{background:linear-gradient(135deg,#6a7858,#56644a 48%,#46533b);box-shadow:inset 0 1px 0 #ffffff40,0 3px 0 #36422e,0 12px 24px #39452e28}
+.booking:active{transform:translateY(2px);box-shadow:inset 0 1px 3px #26301d35,0 1px 0 #36422e,0 4px 10px #39452e18}
+.messenger{background:linear-gradient(145deg,#faf8ef,#eeeee2);border-radius:6px;box-shadow:inset 0 1px 0 #ffffffb0,0 2px 0 #b2b9a680,0 5px 12px #39452e0b;transition:transform .18s,box-shadow .18s}
+.messenger:hover{background:linear-gradient(145deg,#f5f6eb,#e3e8d9)}
+.messenger:active{transform:translateY(1px);box-shadow:inset 0 1px 3px #39452e14,0 1px 0 #b2b9a680}
+.row-icon{background:linear-gradient(145deg,#faf8ef90,#dce1d270);box-shadow:inset 0 1px 0 #ffffff80}
