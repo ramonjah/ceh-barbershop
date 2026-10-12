@@ -50,7 +50,7 @@ a:focus-visible{outline-color:#525f46}
 
 /* Animated barber-pole accent, matched to the olive identity. */
 .booking>.barber-pole{position:relative;display:block;flex:0 0 16px;width:16px;height:58px;margin-left:16px;overflow:hidden;border:1px solid #f4f2e97a;border-radius:8px;background:#ede7d6;box-shadow:inset 2px 0 3px #ffffff55,2px 2px 0 #28332060}
-.barber-pole>span{position:absolute;inset:-32px 0;background:repeating-linear-gradient(135deg,#f3f0df 0 8px,#9ca982 8px 16px,#414d37 16px 24px,#f3f0df 24px 32px);background-size:100% 45.255px;animation:pole-roll 2s linear infinite}
+.barber-pole>span{position:absolute;inset:-32px 0;background:repeating-linear-gradient(135deg,#fffaf2 0 8px,#bd343b 8px 16px,#fffaf2 16px 24px,#285b99 24px 32px);background-size:100% 45.255px;animation:pole-roll 2s linear infinite}
 .barber-pole:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0003,transparent 40%,#fff5 65%,#0003);pointer-events:none}
 @keyframes pole-roll{to{background-position:0 45.255px}}
 @media(prefers-reduced-motion:reduce){.barber-pole>span{animation:none}}
