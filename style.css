@@ -62,3 +62,10 @@ a:focus-visible{outline-color:#525f46}
 .install-card .install-dismiss{position:absolute;right:5px;top:5px;border:0;background:transparent;color:var(--muted);padding:6px}.install-dismiss svg{width:18px;height:18px}
 button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:700px){.install-card{flex-wrap:wrap;gap:12px}.install-copy{flex-basis:calc(100% - 65px)}.install-card #install-action{margin-left:60px}}
+
+/* Collapse the full brand into a wordmark at the center of the header. */
+.hero-brand{animation:none;position:relative;z-index:12;transform-origin:center;will-change:transform,opacity}
+.compact-header{position:fixed;z-index:11;top:0;left:0;right:0;height:68px;display:flex;align-items:center;justify-content:center;background:#e8e9dff5;border-bottom:1px solid #b9c0ae80;opacity:0;pointer-events:none}
+.compact-header img{display:block;width:91px;height:34px;object-fit:contain}
+.compact-header.is-visible{box-shadow:0 2px 12px #39452e08}
+@media(prefers-reduced-motion:reduce){.hero-brand{will-change:auto}}
