@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#e8e9df">
+  <meta name="theme-color" content="#ffffff">
   <meta name="description" content="ЦЕХ — барбершоп в Ейске. Запись, контакты и маршрут: Коммунистическая, 21.">
   <title>ЦЕХ — барбершоп в Ейске</title>
   <link rel="manifest" href="manifest.webmanifest">
@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="ЦЕХ">
   <link rel="icon" href="favicon.svg?v=pole-2" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=paper-sleeve-1">
+  <link rel="stylesheet" href="style.css?v=concrete-fabric-1">
 </head>
 <body>
   <svg class="icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -34,10 +34,13 @@
     </header>
     <div class="content-grid">
     <section class="actions" aria-label="Запись и связь">
-      <div class="booking-wrap"><a class="booking" href="https://dikidi.net/ru/record/2151199?p=0.pi">
-        <span><small>СЛЕДУЮЩАЯ ОСТАНОВКА — ЦЕХ</small><strong>Записаться</strong><span class="booking-caption">Выберите услугу, мастера и время</span></span>
+      <small class="station-board" aria-label="СЛЕДУЮЩАЯ ОСТАНОВКА — ЦЕХ"><span aria-hidden="true">СЛЕДУЮЩАЯ ОСТАНОВКА — ЦЕХ</span></small>
+      <a class="booking" href="https://dikidi.net/ru/record/2151199?p=0.pi">
+        <span><strong>ЗАПИСАТЬСЯ</strong><span class="booking-caption">Выберите услугу, мастера и время</span></span>
         <span class="barber-pole" aria-hidden="true"><span></span></span>
-      </a><span class="blade-handle" role="slider" tabindex="0" aria-label="Положение обёртки" aria-valuemin="12" aria-valuemax="50" aria-valuenow="27" aria-orientation="horizontal" title="Потяните кромку"></span></div>
+        <span class="barber-pole barber-pole-right" aria-hidden="true"><span></span></span>
+        <span class="booking-online"><i aria-hidden="true"></i>ОНЛАЙН</span>
+      </a>
       <a class="row call" href="tel:+79000008593"><span class="row-icon"><svg><use href="#phone"/></svg></span><span class="row-copy"><strong>Позвонить</strong><small>+7 (900) 000-85-93</small></span></a>
       <div class="section-label">НАПИСАТЬ НАМ</div>
       <div class="messengers">
@@ -66,7 +69,7 @@
     </aside>
     <footer><span>© 2026 ЦЕХ. Все права защищены.</span><span>ПРОИЗВОДСТВО СТИЛЯ</span></footer>
   </main>
-  <script src="blade-drag.js?v=3" defer></script>
+  <script src="station-board.js?v=1" defer></script>
   <script src="app-install.js?v=1" defer></script>
 </body>
 </html>

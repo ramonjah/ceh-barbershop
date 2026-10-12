@@ -6,32 +6,32 @@
 .row-end{width:25px;height:25px;padding:2px;stroke-width:1.4}.messenger .mini-arrow{width:19px;height:19px;margin-left:auto;color:var(--muted);stroke-width:1.4}.route-arrow{width:23px;height:23px;color:var(--accent)}.hero-brand{animation:brand-arrive .65s ease-out both}.actions{animation:brand-arrive .65s .12s ease-out both}@keyframes brand-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.hero-brand,.actions{animation:none}}
 
 /* Light interior palette: sage walls, warm wood and charcoal metal. */
-:root{color-scheme:light;--bg:#e8e9df;--surface:#f4f2e9;--text:#242923;--muted:#5f685a;--accent:#525f46;--line:#b9c0ae;--olive:#525f46}
-body{background:radial-gradient(ellipse at 70% 0%,#fff4df 0,transparent 55%),var(--bg)}
+:root{color-scheme:light;--bg:#eff0ee;--surface:#ffffff;--text:#2f322e;--muted:#71766d;--accent:#68715b;--line:#cbd0c7;--olive:#68715b}
+body{background:radial-gradient(ellipse at 70% 0%,#ffffff 0,transparent 55%),var(--bg)}
 .hero-brand{mix-blend-mode:normal}.hero-brand img{filter:none}
-.eyebrow i{box-shadow:0 0 0 4px #525f4610}
-.booking{background:var(--olive);color:#faf7ed;border:1px solid #414d37;box-shadow:0 6px 24px #525f4615}
-.booking:hover{background:#414d37}.booking-caption{color:#e7e8dc}
+.eyebrow i{box-shadow:0 0 0 4px #68715b10}
+.booking{background:var(--olive);color:#faf7ed;border:1px solid #505a46;box-shadow:0 6px 24px #68715b15}
+.booking:hover{background:#505a46}.booking-caption{color:#e7e8dc}
 .booking-arrow{color:#faf7ed}
-.row-icon{background:#f4f2e960}
-.messenger{background:#f4f2e9;border-color:#b9c0ae;color:var(--text)}
-.messenger:hover,.row:hover{background:#dce1d2}
+.row-icon{background:#ffffff60}
+.messenger{background:#ffffff;border-color:#cbd0c7;color:var(--text)}
+.messenger:hover,.row:hover{background:#e4e7e0}
 .row-end,.messenger .mini-arrow{color:var(--accent)}
-.identity-panel{background:#dce1d2;border-color:#b9c0ae}
+.identity-panel{background:#e4e7e0;border-color:#cbd0c7}
 .identity-stripes{opacity:.22}
-.location{background:#dce1d2;color:var(--text);border:1px solid #b9c0ae;box-shadow:inset 3px 0 #b79a72}
-.location p,.location-top .section-label{color:#5f685a}
-.route{border-color:#b9c0ae}
-a:focus-visible{outline-color:#525f46}
+.location{background:#e4e7e0;color:var(--text);border:1px solid #cbd0c7;box-shadow:inset 3px 0 #9ba68c}
+.location p,.location-top .section-label{color:#71766d}
+.route{border-color:#cbd0c7}
+a:focus-visible{outline-color:#68715b}
 
 /* Soft directional light and tactile controls. */
-.booking{background:linear-gradient(135deg,#647153 0%,#525f46 48%,#414d37 100%);border-color:#47543c;border-radius:8px;box-shadow:inset 0 1px 0 #ffffff35,inset 0 -1px 0 #26301d40,0 3px 0 #36422e,0 9px 20px #39452e20;transition:transform .18s,box-shadow .18s}
-.booking:hover{background:linear-gradient(135deg,#6a7858,#56644a 48%,#46533b);box-shadow:inset 0 1px 0 #ffffff40,0 3px 0 #36422e,0 12px 24px #39452e28}
-.booking:active{transform:translateY(2px);box-shadow:inset 0 1px 3px #26301d35,0 1px 0 #36422e,0 4px 10px #39452e18}
-.messenger{background:linear-gradient(145deg,#faf8ef,#eeeee2);border-radius:6px;box-shadow:inset 0 1px 0 #ffffffb0,0 2px 0 #b2b9a680,0 5px 12px #39452e0b;transition:transform .18s,box-shadow .18s}
-.messenger:hover{background:linear-gradient(145deg,#f5f6eb,#e3e8d9)}
-.messenger:active{transform:translateY(1px);box-shadow:inset 0 1px 3px #39452e14,0 1px 0 #b2b9a680}
-.row-icon{background:linear-gradient(145deg,#faf8ef90,#dce1d270);box-shadow:inset 0 1px 0 #ffffff80}
+.booking{background:linear-gradient(135deg,#647153 0%,#68715b 48%,#505a46 100%);border-color:#47543c;border-radius:8px;box-shadow:inset 0 1px 0 #ffffff35,inset 0 -1px 0 #26301d40,0 3px 0 #36422e,0 9px 20px #4d574620;transition:transform .18s,box-shadow .18s}
+.booking:hover{background:linear-gradient(135deg,#6a7858,#56644a 48%,#46533b);box-shadow:inset 0 1px 0 #ffffff40,0 3px 0 #36422e,0 12px 24px #4d574628}
+.booking:active{transform:translateY(2px);box-shadow:inset 0 1px 3px #26301d35,0 1px 0 #36422e,0 4px 10px #4d574618}
+.messenger{background:linear-gradient(145deg,#faf8ef,#eef1eb);border-radius:6px;box-shadow:inset 0 1px 0 #ffffffb0,0 2px 0 #bfc6b980,0 5px 12px #4d57460b;transition:transform .18s,box-shadow .18s}
+.messenger:hover{background:linear-gradient(145deg,#ffffff,#e9ede5)}
+.messenger:active{transform:translateY(1px);box-shadow:inset 0 1px 3px #4d574614,0 1px 0 #bfc6b980}
+.row-icon{background:linear-gradient(145deg,#faf8ef90,#e4e7e070);box-shadow:inset 0 1px 0 #ffffff80}
 
 .hero-brand img{transform-origin:50% 50%;transition:transform .4s cubic-bezier(.2,.65,.3,1)}
 @media(hover:hover) and (pointer:fine){.hero-brand:hover img{transform:scale(1.035)}}
@@ -50,11 +50,11 @@ a:focus-visible{outline-color:#525f46}
 
 /* Matte printed paper sleeve with a straight folded edge. */
 .booking>span:first-child{position:relative;z-index:2}
-.booking>.barber-pole{position:absolute;z-index:0;inset:0 0 0 auto;display:block;width:var(--blade-width,27%);height:100%;margin:0;overflow:hidden;border:0;border-radius:0;box-shadow:none;pointer-events:none;background:#ede7d7}
-.barber-pole>span{position:absolute;inset:-100px 0;background:repeating-linear-gradient(135deg,#f2eddf 0 14px,#a95150 14px 28px,#f2eddf 28px 42px,#46647a 42px 56px);background-repeat:no-repeat;opacity:.8;will-change:transform;animation:pole-roll 3.2s linear infinite}
-.barber-pole:before{content:"";position:absolute;z-index:2;left:0;top:0;bottom:0;width:7px;background:#e5ddcb;border-right:1px solid #fff8;box-shadow:3px 0 6px #352d252c;pointer-events:none}
+.booking>.barber-pole{position:absolute;z-index:0;inset:0 auto 0 0;display:block;width:27%;height:100%;margin:0;overflow:hidden;border:0;border-radius:0;box-shadow:none;pointer-events:none;background:#eff1eb}
+.barber-pole>span{position:absolute;inset:-100px 0;background:repeating-linear-gradient(135deg,#f7f8f5 0 14px,#a83e60 14px 28px,#f7f8f5 28px 42px,#46647a 42px 56px);background-repeat:no-repeat;opacity:.8;will-change:transform;animation:pole-roll 3.2s linear infinite}
+.barber-pole:before{content:"";position:absolute;z-index:2;right:0;top:0;bottom:0;width:7px;background:#dce1d7;border-left:1px solid #fff8;box-shadow:-3px 0 6px #352d252c;pointer-events:none}
 .barber-pole:after{content:"";position:absolute;z-index:3;inset:0;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%2384745e' filter='url(%23n)' opacity='.4' d='M0 0h80v80H0z'/%3E%3C/svg%3E");pointer-events:none}
-.booking,.booking:hover{background:#525f46}
+.booking,.booking:hover{background:#68715b}
 
 .booking:before{display:none}
 @keyframes pole-roll{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,79.195959px,0)}}
@@ -62,15 +62,65 @@ a:focus-visible{outline-color:#525f46}
 
 
 .install-card[hidden],.install-card [hidden]{display:none!important}
-.install-card{display:flex;align-items:center;gap:14px;position:relative;margin-top:28px;padding:20px 44px 20px 18px;background:linear-gradient(135deg,#f7f5ec,#dfe5d5);border:1px solid var(--line);border-radius:8px}
+.install-card{display:flex;align-items:center;gap:14px;position:relative;margin-top:28px;padding:20px 44px 20px 18px;background:linear-gradient(135deg,#f9faf8,#e6e9e3);border:1px solid var(--line);border-radius:8px}
 .install-card>img{border-radius:10px;flex-shrink:0}.install-copy{flex:1}.install-copy strong{font-size:15px}.install-copy p{font-size:12px;line-height:1.5;color:var(--muted);margin:6px 0 0}
-.install-card button{font:inherit;cursor:pointer;border:1px solid #414d37;border-radius:5px;background:var(--olive);color:#faf7ed;padding:10px 12px;font-size:12px}
+.install-card button{font:inherit;cursor:pointer;border:1px solid #505a46;border-radius:5px;background:var(--olive);color:#faf7ed;padding:10px 12px;font-size:12px}
 .install-card .install-dismiss{position:absolute;right:5px;top:5px;border:0;background:transparent;color:var(--muted);padding:6px}.install-dismiss svg{width:18px;height:18px}
 button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:700px){.install-card{flex-wrap:wrap;gap:12px}.install-copy{flex-basis:calc(100% - 65px)}.install-card #install-action{margin-left:60px}}
 
-.booking-wrap{position:relative;--blade-width:27%;--blade-edge:27%}
-.blade-handle{position:absolute;z-index:4;left:calc(100% - var(--blade-edge));top:0;bottom:0;width:28px;transform:translateX(-50%);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none}
-.blade-handle:focus-visible{outline:2px solid #fffaf2;outline-offset:-5px}
-.booking-wrap.is-dragging .booking{transform:none}
-.booking-wrap.is-dragging{cursor:ew-resize}
+/* Sculpted keycap with a pronounced rim. */
+.booking{min-height:140px;margin-bottom:7px;padding:31px 34px 24px;border:1px solid #4c5544;border-radius:13px;background:#68715b;box-shadow:inset 0 2px 0 #bec7b480,inset 0 7px 0 #929d84,inset 7px 0 0 #818e73,inset -7px 0 0 #56624a,inset 0 -10px 0 #48553e,0 6px 0 #394432,0 10px 0 1px #39443218,0 14px 20px #39403626;transition:transform .16s,box-shadow .16s}
+.booking:after{content:"";position:absolute;z-index:1;inset:7px 7px 10px;border:1px solid #c6cebd35;border-radius:7px;pointer-events:none;box-shadow:inset 0 1px 0 #c6cebd30}
+.booking>span:first-child{position:relative;z-index:2;min-width:0;width:100%;text-align:center}
+.booking:hover{background:#68715b;transform:translateY(-1px);box-shadow:inset 0 2px 0 #bec7b480,inset 0 7px 0 #929d84,inset 7px 0 0 #818e73,inset -7px 0 0 #56624a,inset 0 -10px 0 #48553e,0 7px 0 #394432,0 15px 22px #39403630}
+.booking:active{transform:translateY(4px);box-shadow:inset 0 2px 0 #bec7b460,inset 0 7px 0 #89967c,inset 7px 0 0 #77856a,inset -7px 0 0 #56624a,inset 0 -10px 0 #48553e,0 2px 0 #394432,0 6px 10px #39403625}
+.booking strong{font-family:"Arial Black","Helvetica Neue",Arial,sans-serif;font-size:30px;font-weight:900;letter-spacing:0px;line-height:1.2;-webkit-text-stroke:.55px currentColor;color:#fafbf8;text-shadow:0 -1px 0 #35402e,0 -2px 2px #30392b85,0 1px 0 #ffffff45}
+.booking:active strong{text-shadow:0 -1px 0 #30392b,0 -2px 3px #30392ba0,0 1px 0 #ffffff35}
+.booking small{line-height:1.5;color:#f0f4cc;font-family:monospace;letter-spacing:1.3px;text-shadow:0 0 2px #f4ffc980,0 0 7px #e4f3a755,0 0 14px #dce9a12b}
+.booking-caption{line-height:1.5;font-family:monospace;font-size:10px;letter-spacing:.6px;color:#dce1d5;animation:caption-glow 2.8s ease-in-out infinite}
+@keyframes caption-glow{0%,100%{opacity:.75;color:#dce1d5;text-shadow:0 0 3px #edf2e720}50%{opacity:.4;color:#c5cdbd;text-shadow:none}}
+.booking>.barber-pole{inset:8px auto 11px 8px;height:auto;width:10px;border-radius:3px}
+.booking>.barber-pole-right{left:auto;right:8px}
+.barber-pole:before{width:1px;box-shadow:1px 0 3px #352d2520}
+.barber-pole-right:before{right:auto;left:0;border-left:0;border-right:1px solid #fff8;box-shadow:-1px 0 3px #352d2520}
+.booking>.booking-online{position:absolute;z-index:3;right:26px;top:13px;display:flex;align-items:center;gap:5px;width:auto;margin:0;font:7px/1 monospace;letter-spacing:.9px;color:#d3dbca;text-shadow:none}
+.booking-online i{width:4px;height:4px;border-radius:50%;background:#bdcdb5;box-shadow:0 0 4px #bdcdb580,0 0 7px #bdcdb530}
+@media(max-width:700px){.booking{padding:31px 30px 23px}.booking strong{font-size:28px}}
+@media(max-width:360px){.booking{padding-left:26px;padding-right:26px}.booking>.barber-pole{width:8px}.booking strong{font-size:24px;letter-spacing:.2px}.booking small{font-size:8px;letter-spacing:.7px}}
+@media(prefers-reduced-motion:reduce){.booking-caption{animation:none;opacity:.75;color:#dce1d5}}
+
+/* Station display sits above the booking key. */
+.station-board{display:block;margin:0 0 15px;text-align:center;font:9px/1.5 monospace;letter-spacing:1.3px;color:var(--olive);text-shadow:0 0 7px #68715b18}
+@media(max-width:360px){.station-board{font-size:8px;letter-spacing:.7px}}
+
+/* Neutral gray, white and muted olive with a small raspberry accent. */
+.hero-brand img{filter:saturate(.6) brightness(1.2)}
+.station-board{color:#68715b}
+
+.eyebrow i{background:#a83e60;box-shadow:0 0 0 4px #a83e600c}
+
+/* Charcoal concrete controls against a white-to-gray background. */
+:root{--bg:#e6e7e7;--surface:#fff;--line:#cbd0cb}
+body{background:linear-gradient(160deg,#fff 0%,#f4f4f3 42%,#dfe1e0 100%);min-height:100vh}
+.booking,.booking:hover,.messenger,.messenger:hover,.route,.route:hover,.install-card #install-action{background-color:#4f5251;background-image:url("assets/concrete-grain.svg"),linear-gradient(135deg,#606461,#444746);background-size:180px 180px,100% 100%;color:#f6f7f5;border-color:#383d39}
+.booking{box-shadow:inset 0 2px 0 #c7cdc580,inset 0 7px 0 #858989,inset 7px 0 0 #717676,inset -7px 0 0 #414646,inset 0 -10px 0 #343a3a,0 6px 0 #292e2e,0 10px 0 1px #292e2e18,0 14px 20px #252b2526}
+.booking:hover{box-shadow:inset 0 2px 0 #d0d3ce80,inset 0 7px 0 #898d8d,inset 7px 0 0 #747979,inset -7px 0 0 #414646,inset 0 -10px 0 #343a3a,0 7px 0 #292e2e,0 15px 22px #252b2530}
+.booking:active{box-shadow:inset 0 2px 0 #c7cdc560,inset 0 7px 0 #798080,inset 7px 0 0 #687171,inset -7px 0 0 #414646,inset 0 -10px 0 #343a3a,0 2px 0 #292e2e,0 6px 10px #252b2525}
+.booking:after{border-color:#d8ddd535;box-shadow:inset 0 1px 0 #d8ddd530}
+.booking strong{color:#fafbf9;text-shadow:0 -1px 0 #272c27,0 -2px 2px #20252085,0 1px 0 #ffffff45}
+.booking-caption{color:#d9ddd6}
+@keyframes caption-glow{0%,100%{opacity:.75;color:#d9ddd6;text-shadow:0 0 3px #eff4ec20}50%{opacity:.4;color:#c1c8bb;text-shadow:none}}
+.messenger,.route{box-shadow:inset 0 1px 0 #ffffff40,inset 0 -1px 0 #22282270,0 2px 0 #303730,0 5px 12px #252b2518;transition:transform .18s,box-shadow .18s}
+.messenger svg,.route-arrow{color:#e0e7d7}
+.messenger:active,.route:active{transform:translateY(1px);box-shadow:inset 0 1px 3px #1c221c50,0 1px 0 #303730}
+.route{padding:14px 16px;border:1px solid #383d39;border-radius:6px}
+.install-card #install-action{box-shadow:inset 0 1px 0 #ffffff30,0 2px 0 #303730}
+
+/* Woven barber ribbons set into narrow recesses in the concrete face. */
+.booking>.barber-pole{inset:16px auto 20px 11px;width:10px;border-radius:2px;background:#303431;box-shadow:0 0 0 1px #262b2980,1px 0 0 #ffffff20;isolation:isolate}
+.booking>.barber-pole-right{left:auto;right:11px;box-shadow:0 0 0 1px #262b2980,-1px 0 0 #ffffff18}
+.booking .barber-pole>span{background-image:repeating-linear-gradient(0deg,#fff2 0 .5px,#20292325 .5px 1px,transparent 1px 1.979899px),repeating-linear-gradient(90deg,#ffffff18 0 .6px,#25302b28 .6px 1.2px,transparent 1.2px 2px),repeating-linear-gradient(135deg,#dadbd2 0 14px,#93495e 14px 28px,#dadbd2 28px 42px,#4f6570 42px 56px);background-repeat:repeat,repeat,no-repeat;opacity:1}
+.booking .barber-pole:before{inset:0;width:auto;border:0;background:linear-gradient(90deg,#1b252950,transparent 30%,transparent 70%,#1b252940);box-shadow:inset 0 4px 4px -2px #171d1dcc,inset 0 -4px 4px -2px #171d1dcc;z-index:2}
+.booking .barber-pole:after{inset:2px 1px;opacity:.45;background-image:repeating-linear-gradient(0deg,#eeeede80 0 1px,transparent 1px 4px),repeating-linear-gradient(0deg,#eeeede65 0 1px,transparent 1px 4px);background-size:1px 100%,1px 100%;background-position:left top,right top;background-repeat:no-repeat;z-index:3}
+@media(max-width:360px){.booking>.barber-pole{width:8px;left:10px}.booking>.barber-pole-right{left:auto;right:10px}}
