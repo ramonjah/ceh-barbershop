@@ -40,3 +40,10 @@ a:focus-visible{outline-color:#525f46}
 /* Give the logo more balanced space above the action blocks. */
 .hero{padding-bottom:44px}
 @media(max-width:700px){.hero{padding-bottom:38px}}
+
+/* An occasional light sweep draws attention to booking. */
+.booking{position:relative;overflow:hidden;isolation:isolate}
+.booking:before{content:"";position:absolute;inset:-80% -60%;pointer-events:none;background:linear-gradient(110deg,transparent 42%,#fff9df05 45%,#fff9df30 50%,#fff9df05 55%,transparent 58%);transform:translateX(-65%);animation:booking-sheen 7s ease-in-out infinite}
+.booking>span,.booking>.booking-arrow{position:relative;z-index:1}
+@keyframes booking-sheen{0%,65%{transform:translateX(-65%);opacity:0}68%{opacity:1}88%{transform:translateX(65%);opacity:1}92%,100%{transform:translateX(65%);opacity:0}}
+@media(prefers-reduced-motion:reduce){.booking:before{animation:none;display:none}}
