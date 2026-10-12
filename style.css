@@ -48,12 +48,18 @@ a:focus-visible{outline-color:#525f46}
 @keyframes booking-sheen{0%,65%{transform:translateX(-65%);opacity:0}68%{opacity:1}88%{transform:translateX(65%);opacity:1}92%,100%{transform:translateX(65%);opacity:0}}
 @media(prefers-reduced-motion:reduce){.booking:before{animation:none;display:none}}
 
-/* Animated barber-pole accent, matched to the olive identity. */
-.booking>.barber-pole{position:relative;display:block;flex:0 0 16px;width:16px;height:58px;margin-left:16px;overflow:hidden;border:1px solid #f4f2e97a;border-radius:8px;background:#ede7d6;box-shadow:inset 2px 0 3px #ffffff55,2px 2px 0 #28332060}
-.barber-pole>span{position:absolute;inset:-32px 0;background:repeating-linear-gradient(135deg,#fffaf2 0 8px,#bd343b 8px 16px,#fffaf2 16px 24px,#285b99 24px 32px);background-size:100% 45.255px;animation:pole-roll 2s linear infinite}
-.barber-pole:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0003,transparent 40%,#fff5 65%,#0003);pointer-events:none}
-@keyframes pole-roll{to{background-position:0 45.255px}}
+/* Matte printed paper sleeve with a straight folded edge. */
+.booking>span:first-child{position:relative;z-index:2}
+.booking>.barber-pole{position:absolute;z-index:0;inset:0 0 0 auto;display:block;width:var(--blade-width,27%);height:100%;margin:0;overflow:hidden;border:0;border-radius:0;box-shadow:none;pointer-events:none;background:#ede7d7}
+.barber-pole>span{position:absolute;inset:-100px 0;background:repeating-linear-gradient(135deg,#f2eddf 0 14px,#a95150 14px 28px,#f2eddf 28px 42px,#46647a 42px 56px);background-repeat:no-repeat;opacity:.8;will-change:transform;animation:pole-roll 3.2s linear infinite}
+.barber-pole:before{content:"";position:absolute;z-index:2;left:0;top:0;bottom:0;width:7px;background:#e5ddcb;border-right:1px solid #fff8;box-shadow:3px 0 6px #352d252c;pointer-events:none}
+.barber-pole:after{content:"";position:absolute;z-index:3;inset:0;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%2384745e' filter='url(%23n)' opacity='.4' d='M0 0h80v80H0z'/%3E%3C/svg%3E");pointer-events:none}
+.booking,.booking:hover{background:#525f46}
+
+.booking:before{display:none}
+@keyframes pole-roll{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,79.195959px,0)}}
 @media(prefers-reduced-motion:reduce){.barber-pole>span{animation:none}}
+
 
 .install-card[hidden],.install-card [hidden]{display:none!important}
 .install-card{display:flex;align-items:center;gap:14px;position:relative;margin-top:28px;padding:20px 44px 20px 18px;background:linear-gradient(135deg,#f7f5ec,#dfe5d5);border:1px solid var(--line);border-radius:8px}
@@ -62,3 +68,9 @@ a:focus-visible{outline-color:#525f46}
 .install-card .install-dismiss{position:absolute;right:5px;top:5px;border:0;background:transparent;color:var(--muted);padding:6px}.install-dismiss svg{width:18px;height:18px}
 button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:700px){.install-card{flex-wrap:wrap;gap:12px}.install-copy{flex-basis:calc(100% - 65px)}.install-card #install-action{margin-left:60px}}
+
+.booking-wrap{position:relative;--blade-width:27%;--blade-edge:27%}
+.blade-handle{position:absolute;z-index:4;left:calc(100% - var(--blade-edge));top:0;bottom:0;width:28px;transform:translateX(-50%);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none}
+.blade-handle:focus-visible{outline:2px solid #fffaf2;outline-offset:-5px}
+.booking-wrap.is-dragging .booking{transform:none}
+.booking-wrap.is-dragging{cursor:ew-resize}

@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="ЦЕХ">
   <link rel="icon" href="favicon.svg?v=pole-2" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=static-logo-1">
+  <link rel="stylesheet" href="style.css?v=paper-sleeve-1">
 </head>
 <body>
   <svg class="icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -34,10 +34,10 @@
     </header>
     <div class="content-grid">
     <section class="actions" aria-label="Запись и связь">
-      <a class="booking" href="https://dikidi.net/ru/record/2151199?p=0.pi">
+      <div class="booking-wrap"><a class="booking" href="https://dikidi.net/ru/record/2151199?p=0.pi">
         <span><small>СЛЕДУЮЩАЯ ОСТАНОВКА — ЦЕХ</small><strong>Записаться</strong><span class="booking-caption">Выберите услугу, мастера и время</span></span>
         <span class="barber-pole" aria-hidden="true"><span></span></span>
-      </a>
+      </a><span class="blade-handle" role="slider" tabindex="0" aria-label="Положение обёртки" aria-valuemin="12" aria-valuemax="50" aria-valuenow="27" aria-orientation="horizontal" title="Потяните кромку"></span></div>
       <a class="row call" href="tel:+79000008593"><span class="row-icon"><svg><use href="#phone"/></svg></span><span class="row-copy"><strong>Позвонить</strong><small>+7 (900) 000-85-93</small></span></a>
       <div class="section-label">НАПИСАТЬ НАМ</div>
       <div class="messengers">
@@ -66,6 +66,7 @@
     </aside>
     <footer><span>© 2026 ЦЕХ. Все права защищены.</span><span>ПРОИЗВОДСТВО СТИЛЯ</span></footer>
   </main>
+  <script src="blade-drag.js?v=3" defer></script>
   <script src="app-install.js?v=1" defer></script>
 </body>
 </html>
