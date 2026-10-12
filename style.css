@@ -54,3 +54,11 @@ a:focus-visible{outline-color:#525f46}
 .barber-pole:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0003,transparent 40%,#fff5 65%,#0003);pointer-events:none}
 @keyframes pole-roll{to{background-position:0 45.255px}}
 @media(prefers-reduced-motion:reduce){.barber-pole>span{animation:none}}
+
+.install-card[hidden],.install-card [hidden]{display:none!important}
+.install-card{display:flex;align-items:center;gap:14px;position:relative;margin-top:28px;padding:20px 44px 20px 18px;background:linear-gradient(135deg,#f7f5ec,#dfe5d5);border:1px solid var(--line);border-radius:8px}
+.install-card>img{border-radius:10px;flex-shrink:0}.install-copy{flex:1}.install-copy strong{font-size:15px}.install-copy p{font-size:12px;line-height:1.5;color:var(--muted);margin:6px 0 0}
+.install-card button{font:inherit;cursor:pointer;border:1px solid #414d37;border-radius:5px;background:var(--olive);color:#faf7ed;padding:10px 12px;font-size:12px}
+.install-card .install-dismiss{position:absolute;right:5px;top:5px;border:0;background:transparent;color:var(--muted);padding:6px}.install-dismiss svg{width:18px;height:18px}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:700px){.install-card{flex-wrap:wrap;gap:12px}.install-copy{flex-basis:calc(100% - 65px)}.install-card #install-action{margin-left:60px}}

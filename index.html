@@ -6,8 +6,12 @@
   <meta name="theme-color" content="#e8e9df">
   <meta name="description" content="ЦЕХ — барбершоп в Ейске. Запись, контакты и маршрут: Коммунистическая, 21.">
   <title>ЦЕХ — барбершоп в Ейске</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/app-icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ЦЕХ">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=barber-pole-2">
+  <link rel="stylesheet" href="style.css?v=install-1">
 </head>
 <body>
   <svg class="icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -54,7 +58,14 @@
       <a class="route" href="https://yandex.ru/maps/?rtext=~46.692211%2C38.287213&amp;rtt=auto" target="_blank" rel="noopener noreferrer">Построить маршрут <svg class="route-arrow" aria-hidden="true"><use href="#navigation"/></svg></a>
     </section>
     </div></div>
+    <aside id="install-card" class="install-card" aria-label="ЦЕХ на главном экране" hidden>
+      <img src="assets/app-icon-192.png" width="48" height="48" alt="">
+      <div class="install-copy"><strong>ЦЕХ всегда под рукой</strong><p>Добавьте на главный экран — запись в одно касание.</p><p id="install-help" hidden></p></div>
+      <button id="install-action" type="button">Как добавить</button>
+      <button id="install-dismiss" class="install-dismiss" type="button" aria-label="Скрыть предложение"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </aside>
     <footer><span>© 2026 ЦЕХ. Все права защищены.</span><span>ПРОИЗВОДСТВО СТИЛЯ</span></footer>
   </main>
+  <script src="app-install.js?v=1" defer></script>
 </body>
 </html>
