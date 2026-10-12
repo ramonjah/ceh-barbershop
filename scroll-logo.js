@@ -1,7 +1,8 @@
 (() => {
   const hero = document.querySelector('.hero');
   const logo = document.querySelector('.hero-brand');
-  const header = document.querySelector('.compact-header');
+  const header = document.querySelector('.eyebrow');
+  const word = header.querySelector('.header-word');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let frame = 0;
   let initialCenter = 0;
@@ -20,9 +21,8 @@
     const lift = (34 - center) * progress;
     logo.style.transform = reduced.matches ? 'none' : `translateY(${lift}px) scale(${1 - progress * .65})`;
     logo.style.opacity = String(1 - blend);
-    header.style.opacity = String(blend);
-    header.style.transform = reduced.matches ? 'none' : `translateY(${(1 - progress) * 8}px)`;
-    header.classList.toggle('is-visible', progress > .85);
+    word.style.opacity = String(blend);
+    header.classList.toggle('is-collapsed', progress > .85);
   }
   window.addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(update); }, {passive:true});
   window.addEventListener('resize', measure);
