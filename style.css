@@ -4,28 +4,3 @@
 .hero{display:block;padding:25px 0 30px}.hero-brand{max-width:410px;margin:auto}.hero-photo,.atmosphere{display:none}.identity-panel{min-height:286px;border:1px solid var(--line);padding:24px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}.identity-panel .section-label{margin:0}.identity-panel p{font-size:48px;line-height:1;letter-spacing:-2px;font-weight:500;margin:35px 0 0;position:relative}.identity-panel p span{color:var(--accent)}.identity-stripes{position:absolute;right:20px;top:36px;width:125px;height:58px;transform:skewX(-35deg);background:repeating-linear-gradient(90deg,var(--accent) 0,var(--accent) 9px,transparent 9px,transparent 18px);opacity:.8}.place-column .location{margin-top:16px}@media(max-width:700px){.hero{padding:18px 0 24px}.hero-brand{max-width:330px}.identity-panel{display:none}.place-column{margin-top:25px;border:0;padding-top:0}.place-column .location{margin-top:0}}
 
 .row-end{width:25px;height:25px;padding:2px;stroke-width:1.4}.messenger .mini-arrow{width:19px;height:19px;margin-left:auto;color:var(--muted);stroke-width:1.4}.route-arrow{width:23px;height:23px;color:var(--accent)}.hero-brand{animation:brand-arrive .65s ease-out both}.actions{animation:brand-arrive .65s .12s ease-out both}@keyframes brand-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.hero-brand,.actions{animation:none}}
-
-/* Interior palette: warm concrete, olive walls and graphite metal. */
-:root{color-scheme:light;--bg:#c2bcae;--surface:#ede7d6;--text:#191b18;--muted:#515548;--line:#8e9180;--olive:#72785c}
-body{background-color:var(--bg);background-image:radial-gradient(ellipse at 15% 45%,#ede7d65c,transparent 65%),radial-gradient(ellipse at 90% 90%,#72785c24,transparent 60%)}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.045;background-image:url("assets/concrete-grain.svg")}
-.page{padding-top:0}
-.brand{background:#141414;color:#ede7d6;margin:0 -40px 32px;padding:28px 40px 4px;border-bottom:3px solid #72785c}
-.brand .eyebrow{color:#b8baa9;border-color:#3d4036}
-.hero{padding:24px 0 28px}
-.booking{border:1px solid #c5b96d;box-shadow:0 5px 0 #191b1812}
-.row-icon{color:#515a3f;border-color:#8e9180}
-.row-end,.messenger .mini-arrow{color:#515548}
-.messenger{background:#ede7d680;border-color:#8e9180;border-radius:2px}
-.messenger svg{color:#515a3f}
-.messenger:hover,.row:hover{background:#ede7d680}
-.section-label{color:#515548}
-.identity-panel{background:#72785c;color:#f5f2de;border-color:#515a3f}
-.identity-panel .section-label{color:#e5e7d8}
-.location{background:#72785c;border:1px solid #515a3f;color:#fffbed}
-.location p{color:#fffbed}.location-top .section-label{color:#fffbed}
-.location .route{border-color:#fffbed70}
-footer{color:#515548}
-a:focus-visible{outline-color:#515a3f}
-@media(max-width:700px){.brand{margin:0 -20px 24px;padding:22px 20px 0}.hero{padding:18px 0 24px}.booking{padding:23px 22px}.row{min-height:80px}.messenger{min-height:60px}.location{padding:23px 21px}.page{padding-top:0}}
-@media(max-width:360px){.brand{margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}}
