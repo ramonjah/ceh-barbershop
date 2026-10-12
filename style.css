@@ -62,13 +62,3 @@ a:focus-visible{outline-color:#525f46}
 .install-card .install-dismiss{position:absolute;right:5px;top:5px;border:0;background:transparent;color:var(--muted);padding:6px}.install-dismiss svg{width:18px;height:18px}
 button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:700px){.install-card{flex-wrap:wrap;gap:12px}.install-copy{flex-basis:calc(100% - 65px)}.install-card #install-action{margin-left:60px}}
-
-/* Collapse the full brand into a wordmark at the center of the header. */
-.hero-brand{animation:none;position:relative;z-index:12;transform-origin:center;will-change:transform,opacity}
- .brand{display:contents}
-.eyebrow{position:sticky;top:0;z-index:11;min-height:64px;align-items:center;padding:12px 0;background:var(--bg)}
-.header-word{position:absolute;left:50%;top:50%;width:74px;height:28px;object-fit:contain;transform:translate(-50%,-50%);opacity:0;pointer-events:none}
-.eyebrow.is-collapsed>span{opacity:0}
-.eyebrow>span{transition:opacity .2s}
-@media(min-width:701px){.eyebrow.is-collapsed>span{opacity:1}}
-@media(prefers-reduced-motion:reduce){.hero-brand{will-change:auto}}
