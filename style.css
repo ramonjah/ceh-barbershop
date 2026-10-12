@@ -4,3 +4,13 @@
 .hero{display:block;padding:25px 0 30px}.hero-brand{max-width:410px;margin:auto}.hero-photo,.atmosphere{display:none}.identity-panel{min-height:286px;border:1px solid var(--line);padding:24px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}.identity-panel .section-label{margin:0}.identity-panel p{font-size:48px;line-height:1;letter-spacing:-2px;font-weight:500;margin:35px 0 0;position:relative}.identity-panel p span{color:var(--accent)}.identity-stripes{position:absolute;right:20px;top:36px;width:125px;height:58px;transform:skewX(-35deg);background:repeating-linear-gradient(90deg,var(--accent) 0,var(--accent) 9px,transparent 9px,transparent 18px);opacity:.8}.place-column .location{margin-top:16px}@media(max-width:700px){.hero{padding:18px 0 24px}.hero-brand{max-width:330px}.identity-panel{display:none}.place-column{margin-top:25px;border:0;padding-top:0}.place-column .location{margin-top:0}}
 
 .row-end{width:25px;height:25px;padding:2px;stroke-width:1.4}.messenger .mini-arrow{width:19px;height:19px;margin-left:auto;color:var(--muted);stroke-width:1.4}.route-arrow{width:23px;height:23px;color:var(--accent)}.hero-brand{animation:brand-arrive .65s ease-out both}.actions{animation:brand-arrive .65s .12s ease-out both}@keyframes brand-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.hero-brand,.actions{animation:none}}
+
+/* Olive controls and light typography on the original graphite background. */
+:root{--text:#f3f0e5;--muted:#b8bdad;--accent:#bcc5a3;--olive:#525c43}
+.booking{background:var(--olive);color:var(--text);border:1px solid #788464}
+.booking:hover{background:#606d4f}
+.booking-caption{color:#e0e5d6}
+.messenger{background:#252b20;border-color:#59634a;color:var(--text)}
+.messenger:hover,.row:hover{background:#303729}
+.row-end,.messenger .mini-arrow{color:var(--accent)}
+.location,.location p,.location-top .section-label{color:var(--text)}
