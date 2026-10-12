@@ -5,12 +5,21 @@
 
 .row-end{width:25px;height:25px;padding:2px;stroke-width:1.4}.messenger .mini-arrow{width:19px;height:19px;margin-left:auto;color:var(--muted);stroke-width:1.4}.route-arrow{width:23px;height:23px;color:var(--accent)}.hero-brand{animation:brand-arrive .65s ease-out both}.actions{animation:brand-arrive .65s .12s ease-out both}@keyframes brand-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.hero-brand,.actions{animation:none}}
 
-/* Olive controls and light typography on the original graphite background. */
-:root{--text:#f3f0e5;--muted:#b8bdad;--accent:#bcc5a3;--olive:#525c43}
-.booking{background:var(--olive);color:var(--text);border:1px solid #788464}
-.booking:hover{background:#606d4f}
-.booking-caption{color:#e0e5d6}
-.messenger{background:#252b20;border-color:#59634a;color:var(--text)}
-.messenger:hover,.row:hover{background:#303729}
+/* Light interior palette: sage walls, warm wood and charcoal metal. */
+:root{color-scheme:light;--bg:#e8e9df;--surface:#f4f2e9;--text:#242923;--muted:#5f685a;--accent:#525f46;--line:#b9c0ae;--olive:#525f46}
+body{background:radial-gradient(ellipse at 70% 0%,#fff4df 0,transparent 55%),var(--bg)}
+.hero-brand{mix-blend-mode:multiply}.hero-brand img{filter:invert(1) grayscale(1) contrast(1.25)}
+.eyebrow i{box-shadow:0 0 0 4px #525f4610}
+.booking{background:var(--olive);color:#faf7ed;border:1px solid #414d37;box-shadow:0 6px 24px #525f4615}
+.booking:hover{background:#414d37}.booking-caption{color:#e7e8dc}
+.booking-arrow{color:#faf7ed}
+.row-icon{background:#f4f2e960}
+.messenger{background:#f4f2e9;border-color:#b9c0ae;color:var(--text)}
+.messenger:hover,.row:hover{background:#dce1d2}
 .row-end,.messenger .mini-arrow{color:var(--accent)}
-.location,.location p,.location-top .section-label{color:var(--text)}
+.identity-panel{background:#dce1d2;border-color:#b9c0ae}
+.identity-stripes{opacity:.22}
+.location{background:#dce1d2;color:var(--text);border:1px solid #b9c0ae;box-shadow:inset 3px 0 #b79a72}
+.location p,.location-top .section-label{color:#5f685a}
+.route{border-color:#b9c0ae}
+a:focus-visible{outline-color:#525f46}
