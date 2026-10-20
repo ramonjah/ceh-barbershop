@@ -24,7 +24,7 @@
 .video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern,
 .video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern:hover,
 .video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern:active{background:transparent;border-color:transparent;box-shadow:0 5px 20px #00000018}
-.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{content:"";display:block;position:absolute;inset:0;z-index:0;border-radius:inherit;background:linear-gradient(160deg,#f9f9f8,#eceeec);animation:none;transform:none;opacity:1;pointer-events:none}
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{content:"";display:block;position:absolute;inset:0;z-index:0;border-radius:inherit;background:linear-gradient(160deg,#f9f9f8c7,#eceeecc7);animation:none;transform:none;opacity:1;pointer-events:none}
 .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-caption{color:#666e67}
 @supports (mask-composite:exclude){
  .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{mask-image:linear-gradient(#fff,#fff),url('booking-wordmark.svg');mask-size:100% 100%,var(--cut-width,180px) var(--cut-height,30px);mask-position:0 0,var(--cut-x,20px) var(--cut-y,14px);mask-repeat:no-repeat;mask-composite:exclude}
