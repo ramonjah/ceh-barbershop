@@ -56,3 +56,6 @@
 .video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern{border:0;clip-path:inset(0 round 16px)}
 .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{border-radius:0}
 .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{right:0;top:0;bottom:0;width:22px;height:auto;border-radius:0}
+
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{opacity:.65}
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{right:22px}
