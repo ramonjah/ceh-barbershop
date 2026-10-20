@@ -1,0 +1,11 @@
+
+/* A small looping tap hint; only the icon moves. */
+.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern{padding-right:68px}
+.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern>.booking-tap{position:absolute;left:auto;right:17px;top:50%;bottom:auto;translate:0 -50%;width:37px;height:47px;min-width:0;margin:0;flex:none;pointer-events:none;opacity:.64}
+.booking-tap svg{display:block;width:100%;height:100%;overflow:visible;fill:none;stroke:#354b3c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tap-hand{transform-origin:27px 14px;animation:booking-tap-gesture 3.4s cubic-bezier(.4,0,.2,1) infinite;fill:#f4f5f022}
+.tap-detail{stroke-width:1.2;opacity:.7}
+.tap-ring{transform-origin:27px 14px;opacity:0;stroke-width:1.5;animation:booking-tap-ring 3.4s ease-out infinite}
+@keyframes booking-tap-gesture{0%,28%,100%{transform:translateY(3px) rotate(-7deg)}42%{transform:translateY(-2px) rotate(-7deg) scale(.96)}51%{transform:translateY(1px) rotate(-7deg)}65%,82%{transform:translateY(3px) rotate(-7deg)}}
+@keyframes booking-tap-ring{0%,39%,72%,100%{transform:scale(.6);opacity:0}43%{transform:scale(.65);opacity:.65}68%{transform:scale(1.75);opacity:0}}
+@media(prefers-reduced-motion:reduce){.tap-hand,.tap-ring{animation:none}.tap-ring{display:none}.tap-hand{transform:rotate(-7deg)}}
