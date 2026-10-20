@@ -27,7 +27,7 @@
 .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{content:"";display:block;position:absolute;inset:0;z-index:0;border-radius:inherit;background:linear-gradient(160deg,#f9f9f8c7,#eceeecc7);animation:none;transform:none;opacity:1;pointer-events:none}
 .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-caption{color:#666e67}
 @supports (mask-composite:exclude){
- .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{mask-image:linear-gradient(#fff,#fff),url('booking-wordmark.svg');mask-size:100% 100%,var(--cut-width,180px) var(--cut-height,30px);mask-position:0 0,var(--cut-x,20px) var(--cut-y,14px);mask-repeat:no-repeat;mask-composite:exclude}
+ .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{mask-image:linear-gradient(#fff,#fff),url('booking-wordmark.svg?v=2');mask-size:100% 100%,var(--cut-width,180px) var(--cut-height,30px);mask-position:0 0,var(--cut-x,20px) var(--cut-y,14px);mask-repeat:no-repeat;mask-composite:exclude}
  .video-study .booking-wordmark{opacity:0}
 }
 
@@ -42,20 +42,12 @@
 @supports(mask-composite:exclude){.video-study .booking-wordmark{filter:none}}
 @media(prefers-reduced-motion:reduce){.film-placeholder{transition:none}.is-loading .film-placeholder span{animation:none;opacity:0}}
 
-/* Moving barber stripes form the button's flat right edge. */
-.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern{padding-right:38px}
-.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{position:absolute;right:0;top:0;bottom:0;margin:0;width:20px;height:auto;overflow:hidden;border-radius:0;background:#f1eee5}
-.video-study .booking-pole .booking-pole-glass{inset:0;left:0;top:0;translate:none;width:100%;height:100%;border-radius:0;background:#f1eee5;animation:none}
-.video-study .booking-pole .booking-pole-ribbon{opacity:1;animation:booking-pole-turn 2.6s linear infinite}
-@media(prefers-reduced-motion:reduce){.video-study .booking-pole .booking-pole-ribbon{animation:none}}
 
-/* Keep the stripe fully inside the rounded light surface. */
-.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{right:7px;top:8px;bottom:8px;width:12px;border-radius:3px}
-
-/* One shared silhouette clips both the light surface and barber stripe. */
-.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern{border:0;clip-path:inset(0 round 16px)}
-.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{border-radius:0}
-.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{right:0;top:0;bottom:0;width:22px;height:auto;border-radius:0}
-
-.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{opacity:.65}
-.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{right:22px}
+/* A smaller wordmark and a quiet moving highlight invite a click. */
+.video-study .booking-wordmark{width:210px}
+.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern{height:76px;min-height:76px;padding:14px 20px;border:0;clip-path:none}
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{inset:0;border-radius:0;background:linear-gradient(110deg,#eceeecc7 0%,#f9f9f8c7 36%,#ffffffef 50%,#f9f9f8c7 64%,#eceeecc7 100%);background-size:280% 100%;animation:booking-light-sweep 4.8s ease-in-out infinite}
+@keyframes booking-light-sweep{0%,18%{background-position:110% 0}78%,100%{background-position:-10% 0}}
+@media(max-width:420px){.video-study .booking-wordmark{width:195px}.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern{height:72px;min-height:72px;padding:13px 16px}}
+@media(max-width:360px){.video-study .booking-wordmark{width:180px}}
+@media(prefers-reduced-motion:reduce){.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{animation:none}}
