@@ -1,0 +1,53 @@
+
+.video-study .portrait-panel{overflow:hidden;border-radius:24px;translate:0!important;aspect-ratio:1 / 1.2!important;background:#252b27}
+.process-film{position:absolute;inset:0;overflow:hidden}
+.process-film video{width:100%;height:100%;object-fit:cover;object-position:50% 40%;filter:saturate(.25) contrast(.95);display:block}
+.process-film:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0a160f24 0%,transparent 38%,#101b1466 70%,#111e17db 100%);pointer-events:none}
+.film-label{position:absolute;top:24px;left:24px;z-index:1;font:500 9px/1.4 Manrope,sans-serif;letter-spacing:2px;color:#ffffffe0}
+.film-toggle{position:absolute;right:18px;top:17px;z-index:2;border:1px solid #ffffff52;border-radius:50%;width:32px;height:32px;background:#17271c36;color:white;cursor:pointer;display:grid;place-items:center;padding:0;font:12px Arial;backdrop-filter:blur(6px)}
+.film-toggle:focus-visible{outline:2px solid white;outline-offset:3px}
+.video-study.photo-booking-round .portrait-panel .booking.booking--modern{top:auto;bottom:22px;right:22px;left:22px;width:auto;height:84px;box-sizing:border-box;border:1px solid #ffffff24;background:linear-gradient(135deg,#405a48f5,#2c4033f5);box-shadow:0 6px 24px #00000026}
+@media(max-width:420px){.video-study.photo-booking-round .portrait-panel .booking.booking--modern{left:16px;right:16px;bottom:16px;height:78px}.film-label{top:22px;left:20px}}
+
+/* Two clear lines use the full-width booking control. */
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern strong{font-size:28px;line-height:1.1;letter-spacing:.01em}
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-caption{display:block;white-space:nowrap;font-size:10px;line-height:1.5;margin-top:6px}
+@media(max-width:420px){.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern strong{font-size:26px}}
+@media(max-width:360px){.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern strong{font-size:24px}.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-caption{font-size:9px}}
+
+/* Custom Cyrillic lettering: broad strokes and clipped corners echo the CEH logo. */
+.video-study .booking-wordmark{display:block;width:180px;max-width:100%;height:auto;object-fit:contain;object-position:left center}
+@media(max-width:420px){.video-study .booking-wordmark{width:168px}}
+@media(max-width:360px){.video-study .booking-wordmark{width:150px}}
+
+/* The light surface is cut through, revealing the original video beneath the lettering. */
+.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern,
+.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern:hover,
+.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern:active{background:transparent;border-color:transparent;box-shadow:0 5px 20px #00000018}
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{content:"";display:block;position:absolute;inset:0;z-index:0;border-radius:inherit;background:linear-gradient(160deg,#f9f9f8,#eceeec);animation:none;transform:none;opacity:1;pointer-events:none}
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-caption{color:#666e67}
+@supports (mask-composite:exclude){
+ .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:before{mask-image:linear-gradient(#fff,#fff),url('booking-wordmark.svg');mask-size:100% 100%,var(--cut-width,180px) var(--cut-height,30px);mask-position:0 0,var(--cut-x,20px) var(--cut-y,14px);mask-repeat:no-repeat;mask-composite:exclude}
+ .video-study .booking-wordmark{opacity:0}
+}
+
+/* The still frame stays visible until playback actually starts. */
+.film-placeholder{position:absolute;inset:0;background:#354b3c;pointer-events:none;opacity:1;transition:opacity .65s ease}
+.film-placeholder img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 40%;filter:grayscale(1);opacity:.62}
+.film-placeholder span{position:absolute;inset:0;background:linear-gradient(110deg,#354b3c66 25%,#7c9e7e88 48%,#354b3c66 71%);background-size:260% 100%;opacity:0}
+.is-loading .film-placeholder span{opacity:1;animation:film-loading-sheen 2.3s ease-in-out infinite}
+.process-film.has-played .film-placeholder{opacity:0}
+@keyframes film-loading-sheen{from{background-position:120% 0}to{background-position:-120% 0}}
+.video-study .booking-wordmark{filter:brightness(0)}
+@supports(mask-composite:exclude){.video-study .booking-wordmark{filter:none}}
+@media(prefers-reduced-motion:reduce){.film-placeholder{transition:none}.is-loading .film-placeholder span{animation:none;opacity:0}}
+
+/* Moving barber stripes form the button's flat right edge. */
+.video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern{padding-right:38px}
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{position:absolute;right:0;top:0;bottom:0;margin:0;width:20px;height:auto;overflow:hidden;border-radius:0;background:#f1eee5}
+.video-study .booking-pole .booking-pole-glass{inset:0;left:0;top:0;translate:none;width:100%;height:100%;border-radius:0;background:#f1eee5;animation:none}
+.video-study .booking-pole .booking-pole-ribbon{opacity:1;animation:booking-pole-turn 2.6s linear infinite}
+@media(prefers-reduced-motion:reduce){.video-study .booking-pole .booking-pole-ribbon{animation:none}}
+
+/* Keep the stripe fully inside the rounded light surface. */
+.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern .booking-direction.booking-pole{right:7px;top:8px;bottom:8px;width:12px;border-radius:3px}

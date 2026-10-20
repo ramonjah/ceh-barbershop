@@ -14,8 +14,9 @@
   <link rel="stylesheet" href="style.css?v=white-booking-restored-1">
   <link rel="preload" href="assets/fonts/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="booking-modern.css?v=13">
+  <link rel="stylesheet" href="assets/process-film.css?v=3">
 </head>
-<body class="photo-booking-round">
+<body class="photo-booking-round video-study">
   <svg class="icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
     <filter id="logo-olive" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="linear" slope="0.7451" intercept="0.2549"/><feFuncG type="linear" slope="0.6980" intercept="0.3020"/><feFuncB type="linear" slope="0.7843" intercept="0.2157"/></feComponentTransfer></filter>
     <symbol id="navigation" viewBox="0 0 24 24"><path d="m21 3-7 18-3-8-8-3 18-7Z"/></symbol>
@@ -43,12 +44,16 @@
       </div>
       <small class="station-board" aria-label="СЛЕДУЮЩАЯ ОСТАНОВКА — ЦЕХ"><span aria-hidden="true">СЛЕДУЮЩАЯ ОСТАНОВКА — ЦЕХ</span></small>
       <div class="portrait-panel">
-        <div class="editorial-portrait" aria-hidden="true"><div class="portrait-motion"><img src="assets/hero-portrait-front-v2.webp" width="1254" height="1254" alt="" decoding="async">
-          <svg class="saw-chain-overlay" viewBox="0 0 1254 1254" focusable="false"><defs><path id="saw-chain-track" pathLength="1200" d="M 623 388 L 1092 482 C 1122 490 1149 507 1146 529 C 1142 548 1119 553 1091 546 L 585 419 Q 568 408 584 400 Z"/><clipPath id="saw-chain-visible"><path d="M610 368 1170 468 1170 570 682 461 580 428 580 408Z"/></clipPath></defs><g clip-path="url(#saw-chain-visible)"><use class="saw-chain-bed" href="#saw-chain-track"/><use class="saw-chain-teeth" href="#saw-chain-track"/><use class="saw-chain-links" href="#saw-chain-track"/></g></svg>
-        </div></div>
+        <div class="process-film is-loading">
+          <video id="process-video" muted loop playsinline preload="metadata" poster="assets/ceh-process-poster.jpg" aria-label="Работа мастеров в ЦЕХе">
+            <source src="assets/ceh-process.mp4" type="video/mp4">
+          </video>
+          <div class="film-placeholder" aria-hidden="true"><img src="assets/ceh-process-poster.jpg" width="360" height="640" alt=""><span></span></div>
+          <button class="film-toggle" type="button" aria-label="Включить видео">▶</button>
+        </div>
       <a class="booking booking--modern" href="https://dikidi.net/record?widget=220108" data-record-options="start=1">
-        <span><strong>ЗАПИСЬ</strong><span class="booking-caption"><span>Выберите услугу,</span><span>мастера и время</span></span></span>
-        <span class="booking-direction booking-pole" aria-hidden="true"><span class="booking-pole-glass"><span class="booking-pole-ribbon"></span></span><svg class="booking-pole-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></svg></span>
+        <span><strong><img class="booking-wordmark" src="assets/booking-wordmark.svg" width="602" height="100" alt="ЗАПИСЬ"></strong><span class="booking-caption">Выберите услугу, мастера и время</span></span>
+        <span class="booking-direction booking-pole" aria-hidden="true"><span class="booking-pole-glass"><span class="booking-pole-ribbon"></span></span></span>
       </a>
       </div>
     </header>
@@ -87,7 +92,7 @@
   </main>
   <script src="https://dikidi.net/assets/js/widget_record/widget2.min.js?v=1773811740" async></script>
   <script src="booking-widget.js?v=1" defer></script>
-  <script src="portrait-intro.js?v=1" defer></script>
+  <script src="process-film.js?v=1" defer></script>
   <script src="station-board.js?v=2" defer></script>
   <script src="app-install.js?v=2" defer></script>
 </body>
