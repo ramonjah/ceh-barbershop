@@ -16,20 +16,3 @@
  reduced.addEventListener('change',()=>{if(reduced.matches){video.pause();film.classList.remove('is-loading');}else if(inView&&!userPaused){play();}});
  if(reduced.matches)film.classList.remove('is-loading');else play();
 })();
-
-(() => {
- const button=document.querySelector('.booking--modern');
- const word=button.querySelector('.booking-wordmark');
- const align=()=>{
-  const a=button.getBoundingClientRect(),b=word.getBoundingClientRect();
-  const scale=a.width/button.offsetWidth;
-  button.style.setProperty('--cut-width',`${b.width/scale}px`);
-  button.style.setProperty('--cut-height',`${b.height/scale}px`);
-  button.style.setProperty('--cut-x',`${(b.left-a.left)/scale-button.clientLeft}px`);
-  button.style.setProperty('--cut-y',`${(b.top-a.top)/scale-button.clientTop}px`);
- };
- new ResizeObserver(align).observe(button);
- word.addEventListener('load',align);
- document.fonts.ready.then(align);
- align();
-})();
