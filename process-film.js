@@ -7,7 +7,8 @@
  let userPaused=false,inView=true;
  const sync=()=>{button.textContent=video.paused?'▶':'Ⅱ';button.setAttribute('aria-label',video.paused?'Включить видео':'Приостановить видео');};
  const play=()=>video.play().catch(()=>{film.classList.remove('is-loading');sync();});
- video.addEventListener('playing',()=>{film.classList.remove('is-loading');film.classList.add('has-played');sync();});
+ const reveal=()=>{film.classList.remove('is-loading');film.classList.add('has-played');};
+ video.addEventListener('playing',()=>{if('requestVideoFrameCallback' in video)video.requestVideoFrameCallback(reveal);else reveal();sync();});
  video.addEventListener('pause',sync);
  video.addEventListener('error',()=>{film.classList.remove('is-loading');sync();});
  button.addEventListener('click',()=>{userPaused=!video.paused;if(video.paused){play();}else{video.pause();}});

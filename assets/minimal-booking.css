@@ -1,6 +1,6 @@
 /* Original footage colors and a quiet, page-colored booking control. */
-.video-study .process-film video{filter:none}
-.video-study .film-placeholder img{filter:none;opacity:1}
+.video-study .process-film video{filter:saturate(.93)}
+.video-study .film-placeholder img{filter:saturate(.93);opacity:1}
 .video-study .process-film:after{background:none}
 .video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern,
 .video-study.photo-booking-round:not(.layout-edit) .portrait-panel .booking.booking--modern:hover,
@@ -21,3 +21,8 @@
 .video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:after{content:"";display:block;position:absolute;inset:0;border-radius:inherit;z-index:0;pointer-events:none;background:linear-gradient(110deg,transparent 42%,#ffffff65 50%,transparent 58%);background-size:300% 100%;background-repeat:no-repeat;animation:minimal-sheen 7s linear infinite}
 @keyframes minimal-sheen{from{background-position:100% 0}to{background-position:0% 0}}
 @media(prefers-reduced-motion:reduce){.video-study.photo-booking-round:not(.layout-edit) .booking.booking--modern:after{animation:none;display:none}}
+
+/* Rounded footage without a border or a dark backing edge. */
+.video-study .portrait-panel{border:0;border-radius:24px;box-shadow:none;outline:0;background:transparent;isolation:isolate}
+.video-study .process-film{border:0;border-radius:inherit;box-shadow:none;outline:0;background:url('ceh-process-poster.jpg') center 40% / cover no-repeat}
+.video-study .process-film video{transform:translateZ(0) scale(1.008);backface-visibility:hidden;will-change:transform}
